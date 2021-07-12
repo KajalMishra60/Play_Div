@@ -17,6 +17,7 @@ document.getElementById("gendiv").addEventListener('click', function() {
         }    
         document.getElementById("gen").appendChild(rowDiv);
     }
+    document.getElementById("gendiv").hidden=true;
  });
  document.getElementById("colordiv").addEventListener('click', function() {     
     let r=window.prompt("Enter row number");
