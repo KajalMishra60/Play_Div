@@ -1,0 +1,45 @@
+main{
+  height: auto;
+  width: auto;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  height: 2rem;
+  width: 100%;
+  background-color: crimson;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content{
+  min-height: 5rem;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-evenly;
+}
+div{
+    min-height:1rem ;
+    width: 10rem;
+    float: left;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+    display: flex;
+    flex-direction:column;
+  }  
+  .col {
+    display: flex;
+    min-height: 1rem;
+    min-width: 1rem;
+    flex-wrap: wrap;
+    background: palevioletred;    
+    border: .1rem solid whitesmoke; 
+    margin: 0.1rem;
+    color: white;
+  }
