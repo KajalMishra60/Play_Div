@@ -6,10 +6,10 @@ let rows,cols;
 document.getElementById("gendiv").addEventListener('click', function() {
     rows=window.prompt("Enter number of Rows","1");
     cols=window.prompt("Enter number of Column","1");
-    for(let i=0; i<rows; i++) {
+    for(let i=1; i<=rows; i++) {
         let rowDiv = document.createElement("div");
         rowDiv.className = "row";    
-        for(let j=0; j<cols; j++) {
+        for(let j=1; j<=cols; j++) {
             let columnDiv = document.createElement("div");
             columnDiv.className = "col";                       
             columnDiv.id = i.toString()+j.toString();
@@ -20,12 +20,12 @@ document.getElementById("gendiv").addEventListener('click', function() {
  });
  document.getElementById("colordiv").addEventListener('click', function() {     
     let r=window.prompt("Enter row number");
-    if(r>=rows){
+    if(r>rows){
     alert("Invalid");
     }
     else {
         let c=window.prompt("Enter Column number");
-        if(c>=cols){
+        if(c>cols){
             alert("Invalid");
             }
     else{
